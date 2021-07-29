@@ -1,5 +1,5 @@
 // if (!window.I18N) window.I18N = {};
 // window.I18N["en"] = {
-module.exports = {
+export default {
   TITLE: "English Streams",
 }
