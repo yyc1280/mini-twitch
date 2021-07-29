@@ -1,191 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoL Streams</title>
     <style>
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+      * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-html {
-  min-height: 100%;
-}
+      html {
+        min-height: 100%;
+      }
 
-body {
-  position: relative;
-  background-image: url("../images/bg.jpg");
-  background-attachment: fixed;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+      body {
+        position: relative;
+        background-image: url("../images/bg.jpg");
+        background-attachment: fixed;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
 
-body::before {
-  content: "";
-  background-attachment: fixed;
-  z-index: -1;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%;
-}
+      body::before {
+        content: "";
+        background-attachment: fixed;
+        z-index: -1;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
+      }
 
-body h1 {
-  min-height: 70px;
-  color: white;
-  text-align: center;
-  margin-top: 30px;
-  font-size: 3rem;
-  vertical-align: middle;
-}
+      body h1 {
+        min-height: 70px;
+        color: white;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 3rem;
+        vertical-align: middle;
+      }
 
-body .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
+      body .buttons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
 
-body .buttons button {
-  height: 50px;
-  width: 70px;
-  margin: 20px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: white;
-  font-size: 1.3rem;
-}
+      body .buttons button {
+        height: 50px;
+        width: 70px;
+        margin: 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-size: 1.3rem;
+      }
 
-body .buttons button:hover {
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  color: #d39be9;
-}
+      body .buttons button:hover {
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        color: #d39be9;
+      }
 
-.streams {
-  padding: 20px 0;
-  height: 100%;
-  width: 85%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+      .streams {
+        padding: 20px 0;
+        height: 100%;
+        width: 85%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
 
-.streams .stream {
-  margin: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.33%;
-          flex: 0 0 33.33%;
-}
+      .streams .stream {
+        margin: 20px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33%;
+        flex: 0 0 33.33%;
+      }
 
-.streams .stream .shadow {
-  max-width: 300px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  cursor: pointer;
-}
+      .streams .stream .shadow {
+        max-width: 300px;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
 
-.streams .stream .shadow:hover {
-  translate: 5px -5px;
-  -webkit-filter: brightness(1.4);
-          filter: brightness(1.4);
-  -webkit-box-shadow: -5px 4px 0px 4px #8b1bb8;
-          box-shadow: -5px 4px 0px 4px #8b1bb8;
-}
+      .streams .stream .shadow:hover {
+        translate: 5px -5px;
+        -webkit-filter: brightness(1.4);
+        filter: brightness(1.4);
+        -webkit-box-shadow: -5px 4px 0px 4px #8b1bb8;
+        box-shadow: -5px 4px 0px 4px #8b1bb8;
+      }
 
-.streams .stream .shadow .stream__pic {
-  height: 160px;
-  width: 300px;
-  vertical-align: top;
-  background: url("../images/video.jpg");
-}
+      .streams .stream .shadow .stream__pic {
+        height: 160px;
+        width: 300px;
+        vertical-align: top;
+        background: url("../images/video.jpg");
+      }
 
-.streams .stream .shadow .info {
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 60px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+      .streams .stream .shadow .info {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 60px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
 
-.streams .stream .shadow .info img {
-  margin: 0 10px;
-  width: 45px;
-  height: 45px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50px;
-}
+      .streams .stream .shadow .info img {
+        margin: 0 10px;
+        width: 45px;
+        height: 45px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 50px;
+      }
 
-.streams .stream .shadow .info .info__text {
-  max-width: 75%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: white;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 1.2rem;
-}
+      .streams .stream .shadow .info .info__text {
+        max-width: 75%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        color: white;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: 1.2rem;
+      }
 
-.streams .stream .shadow .info .info__text p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
+      .streams .stream .shadow .info .info__text p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
 
-a {
-  text-decoration: none;
-}
-/*# sourceMappingURL=style.css.map */
-</style>
+      a {
+        text-decoration: none;
+      }
+      /*# sourceMappingURL=style.css.map */
+    </style>
     <!-- <script
       src="https://code.jquery.com/jquery-3.4.1.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -201,7 +201,91 @@ a {
     <div class="streams"></div>
     <!-- <script type="module" src="./src/index.js"></script> -->
     <script>
-!function(e){var t={};function a(r){if(t[r])return t[r].exports;var n=t[r]={i:r,l:!1,exports:{}};return e[r].call(n.exports,n,n.exports,a),n.l=!0,n.exports}a.m=e,a.c=t,a.d=function(r,n,e){a.o(r,n)||Object.defineProperty(r,n,{enumerable:!0,get:e})},a.r=function(r){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(r,"__esModule",{value:!0})},a.t=function(n,r){if(1&r&&(n=a(n)),8&r)return n;if(4&r&&"object"==typeof n&&n&&n.__esModule)return n;var e=Object.create(null);if(a.r(e),Object.defineProperty(e,"default",{enumerable:!0,value:n}),2&r&&"string"!=typeof n)for(var t in n)a.d(e,t,function(r){return n[r]}.bind(null,t));return e},a.n=function(r){var n=r&&r.__esModule?function(){return r.default}:function(){return r};return a.d(n,"a",n),n},a.o=function(r,n){return Object.prototype.hasOwnProperty.call(r,n)},a.p="",a(a.s="./src/index.js")}({"./src/index.js":function(module,__webpack_exports__,__webpack_require__){"use strict";eval('__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _lang_en_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lang-en.js */ "./src/lang-en.js");\n/* harmony import */ var _lang_zh_tw_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lang-zh-tw.js */ "./src/lang-zh-tw.js");\n\r\n\r\n\r\nconst clientId = "93raemk5s5z1jlabhw3ykceasxn8mi"\r\n//i know this shouldn\'t be here but..\r\nconst clientSecret = "959qnr3n1uz1glsv91urs4tzkipceg"\r\nconst tokenUrl = `https://id.twitch.tv/oauth2/token?client_id=${clientId}&client_secret=${clientSecret}&grant_type=client_credentials`\r\n\r\nconst url = new URL("https://api.twitch.tv/helix/streams")\r\nconst streams = document.querySelector(".streams")\r\nconst title = document.querySelector("h1")\r\nconst buttons = document.querySelectorAll("button")\r\n\r\nlet token\r\nlet lang = "en"\r\nlet cursor\r\nlet data\r\nlet streamsData\r\n\r\n// getting app access token\r\n// this kind of token cannot be refreshed(twitch API)\r\nasync function getToken() {\r\n  let token = ""\r\n  try {\r\n    const res = await fetch(tokenUrl, { method: "POST" })\r\n    const resp = await res.json()\r\n\r\n    token = resp.access_token\r\n    return token\r\n  } catch (error) {\r\n    console.log(error)\r\n  }\r\n}\r\n\r\n// fetching streams & cursor\r\nasync function getStreams(lang, token, nextCursor = "") {\r\n  const params = { game_id: "21779", after: nextCursor, language: lang }\r\n  url.search = new URLSearchParams(params).toString()\r\n\r\n  const res = await fetch(url, {\r\n    method: "GET",\r\n    headers: {\r\n      Authorization: `Bearer ${token}`,\r\n      "Client-Id": clientId,\r\n    },\r\n  })\r\n  const data = await res.json()\r\n  cursor = data.pagination.cursor\r\n\r\n  return { data, cursor }\r\n}\r\n\r\n// how come the stream data doesn\'t include the avatar???\r\nasync function getAvatar(stream, token) {\r\n  const url = new URL("https://api.twitch.tv/helix/users")\r\n  const params = { id: stream.user_id }\r\n  url.search = new URLSearchParams(params).toString()\r\n  const res = await fetch(url, {\r\n    method: "GET",\r\n    headers: {\r\n      Authorization: `Bearer ${token}`,\r\n      "Client-Id": clientId,\r\n    },\r\n  })\r\n\r\n  const data = await res.json()\r\n  return data.data[0].profile_image_url\r\n}\r\n\r\n// append to DOM\r\nfunction appendStream(stream, avatar) {\r\n  const thumbnail = stream.thumbnail_url\r\n    .replace("{width}", 300)\r\n    .replace("{height}", 160)\r\n\r\n  streams.innerHTML += `\r\n  <div class="stream">\r\n  <a target="_blank" href="https://www.twitch.tv/${stream.user_login}">\r\n      <div class="shadow">\r\n        <img class="stream__pic" loading="lazy" src=${thumbnail} alt="" />\r\n        <div class="info">\r\n          <img src=${avatar} alt="" />\r\n          <div class="info__text">\r\n            <p class="stream__name">${stream.title}</p>\r\n            <p class="streamer">${stream.user_name}</p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      </a>\r\n    </div>\r\n `\r\n}\r\n\r\n// loop over the fetched streams\r\nasync function setStreams(stream, token) {\r\n  stream.forEach(async s => {\r\n    const avatar = await getAvatar(s, token)\r\n    appendStream(s, avatar)\r\n  })\r\n}\r\n\r\n// main load page func\r\nasync function loadPage(lang) {\r\n  try {\r\n    streamsData = await getStreams(lang, token, cursor)\r\n    data = streamsData.data\r\n    cursor = streamsData.cursor\r\n\r\n    setStreams(data.data, token)\r\n  } catch (error) {\r\n    throw new Error(error)\r\n  }\r\n}\r\nasync function initLoad() {\r\n  token = await getToken()\r\n  loadPage(lang)\r\n}\r\n\r\ninitLoad()\r\n\r\n// switch language buttons\r\nbuttons.forEach(b =>\r\n  b.addEventListener("click", function handleButtons() {\r\n    if (this.className === lang) return\r\n\r\n    lang = this.className\r\n    title.textContent = lang === "en" ? _lang_en_js__WEBPACK_IMPORTED_MODULE_0__["default"].TITLE : _lang_zh_tw_js__WEBPACK_IMPORTED_MODULE_1__["default"].TITLE\r\n    streams.innerHTML = ""\r\n    // also need to reset the cursor\r\n    cursor = ""\r\n    loadPage(lang)\r\n  })\r\n)\r\n\r\n// infinite scroll\r\nwindow.addEventListener("scroll", async () => {\r\n  if (\r\n    Math.round(window.innerHeight + window.scrollY) >=\r\n    document.body.offsetHeight\r\n  ) {\r\n    streamsData = await getStreams(lang, token, cursor)\r\n    data = streamsData.data\r\n    cursor = streamsData.cursor\r\n\r\n    setStreams(data.data, token)\r\n  }\r\n})\r\n\n\n//# sourceURL=webpack:///./src/index.js?')},"./src/lang-en.js":function(module,__webpack_exports__,__webpack_require__){"use strict";eval('__webpack_require__.r(__webpack_exports__);\n// if (!window.I18N) window.I18N = {};\r\n// window.I18N["en"] = {\r\n/* harmony default export */ __webpack_exports__["default"] = ({\r\n  TITLE: "English Streams",\r\n});\r\n\n\n//# sourceURL=webpack:///./src/lang-en.js?')},"./src/lang-zh-tw.js":function(module,__webpack_exports__,__webpack_require__){"use strict";eval('__webpack_require__.r(__webpack_exports__);\n// if (!window.I18N) window.I18N = {};\r\n// window.I18N["zh"]\r\n// module.exports = {\r\n/* harmony default export */ __webpack_exports__["default"] = ({\r\n  TITLE: "中文實況",\r\n});\r\n\n\n//# sourceURL=webpack:///./src/lang-zh-tw.js?')}});
-</script>
+      !(function (e) {
+        var t = {}
+        function a(r) {
+          if (t[r]) return t[r].exports
+          var n = (t[r] = { i: r, l: !1, exports: {} })
+          return e[r].call(n.exports, n, n.exports, a), (n.l = !0), n.exports
+        }
+        ;(a.m = e),
+          (a.c = t),
+          (a.d = function (r, n, e) {
+            a.o(r, n) || Object.defineProperty(r, n, { enumerable: !0, get: e })
+          }),
+          (a.r = function (r) {
+            "undefined" != typeof Symbol &&
+              Symbol.toStringTag &&
+              Object.defineProperty(r, Symbol.toStringTag, { value: "Module" }),
+              Object.defineProperty(r, "__esModule", { value: !0 })
+          }),
+          (a.t = function (n, r) {
+            if ((1 & r && (n = a(n)), 8 & r)) return n
+            if (4 & r && "object" == typeof n && n && n.__esModule) return n
+            var e = Object.create(null)
+            if (
+              (a.r(e),
+              Object.defineProperty(e, "default", { enumerable: !0, value: n }),
+              2 & r && "string" != typeof n)
+            )
+              for (var t in n)
+                a.d(
+                  e,
+                  t,
+                  function (r) {
+                    return n[r]
+                  }.bind(null, t)
+                )
+            return e
+          }),
+          (a.n = function (r) {
+            var n =
+              r && r.__esModule
+                ? function () {
+                    return r.default
+                  }
+                : function () {
+                    return r
+                  }
+            return a.d(n, "a", n), n
+          }),
+          (a.o = function (r, n) {
+            return Object.prototype.hasOwnProperty.call(r, n)
+          }),
+          (a.p = ""),
+          a((a.s = "./src/index.js"))
+      })({
+        "./src/index.js": function (
+          module,
+          __webpack_exports__,
+          __webpack_require__
+        ) {
+          "use strict"
+          eval(
+            '__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _lang_en_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lang-en.js */ "./src/lang-en.js");\n/* harmony import */ var _lang_zh_tw_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lang-zh-tw.js */ "./src/lang-zh-tw.js");\n\r\n\r\n\r\nconst clientId = "93raemk5s5z1jlabhw3ykceasxn8mi"\r\n//i know this shouldn\'t be here but..\r\nconst clientSecret = "959qnr3n1uz1glsv91urs4tzkipceg"\r\nconst tokenUrl = `https://id.twitch.tv/oauth2/token?client_id=${clientId}&client_secret=${clientSecret}&grant_type=client_credentials`\r\n\r\nconst url = new URL("https://api.twitch.tv/helix/streams")\r\nconst streams = document.querySelector(".streams")\r\nconst title = document.querySelector("h1")\r\nconst buttons = document.querySelectorAll("button")\r\n\r\nlet token\r\nlet lang = "en"\r\nlet cursor\r\nlet data\r\nlet streamsData\r\n\r\n// getting app access token\r\n// this kind of token cannot be refreshed(twitch API)\r\nasync function getToken() {\r\n  let token = ""\r\n  try {\r\n    const res = await fetch(tokenUrl, { method: "POST" })\r\n    const resp = await res.json()\r\n\r\n    token = resp.access_token\r\n    return token\r\n  } catch (error) {\r\n    console.log(error)\r\n  }\r\n}\r\n\r\n// fetching streams & cursor\r\nasync function getStreams(lang, token, nextCursor = "") {\r\n  const params = { game_id: "21779", after: nextCursor, language: lang }\r\n  url.search = new URLSearchParams(params).toString()\r\n\r\n  const res = await fetch(url, {\r\n    method: "GET",\r\n    headers: {\r\n      Authorization: `Bearer ${token}`,\r\n      "Client-Id": clientId,\r\n    },\r\n  })\r\n  const data = await res.json()\r\n  cursor = data.pagination.cursor\r\n\r\n  return { data, cursor }\r\n}\r\n\r\n// how come the stream data doesn\'t include the avatar???\r\nasync function getAvatar(stream, token) {\r\n  const url = new URL("https://api.twitch.tv/helix/users")\r\n  const params = { id: stream.user_id }\r\n  url.search = new URLSearchParams(params).toString()\r\n  const res = await fetch(url, {\r\n    method: "GET",\r\n    headers: {\r\n      Authorization: `Bearer ${token}`,\r\n      "Client-Id": clientId,\r\n    },\r\n  })\r\n\r\n  const data = await res.json()\r\n  return data.data[0].profile_image_url\r\n}\r\n\r\n// append to DOM\r\nfunction appendStream(stream, avatar) {\r\n  const thumbnail = stream.thumbnail_url\r\n    .replace("{width}", 300)\r\n    .replace("{height}", 160)\r\n\r\n  streams.innerHTML += `\r\n  <div class="stream">\r\n  <a target="_blank" href="https://www.twitch.tv/${stream.user_login}">\r\n      <div class="shadow">\r\n        <img class="stream__pic" loading="lazy" src=${thumbnail} alt="" />\r\n        <div class="info">\r\n          <img src=${avatar} alt="" />\r\n          <div class="info__text">\r\n            <p class="stream__name">${stream.title}</p>\r\n            <p class="streamer">${stream.user_name}</p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      </a>\r\n    </div>\r\n `\r\n}\r\n\r\n// loop over the fetched streams\r\nasync function setStreams(stream, token) {\r\n  stream.forEach(async s => {\r\n    const avatar = await getAvatar(s, token)\r\n    appendStream(s, avatar)\r\n  })\r\n}\r\n\r\n// main load page func\r\nasync function loadPage(lang) {\r\n  try {\r\n    streamsData = await getStreams(lang, token, cursor)\r\n    data = streamsData.data\r\n    cursor = streamsData.cursor\r\n\r\n    setStreams(data.data, token)\r\n  } catch (error) {\r\n    throw new Error(error)\r\n  }\r\n}\r\nasync function initLoad() {\r\n  token = await getToken()\r\n  loadPage(lang)\r\n}\r\n\r\ninitLoad()\r\n\r\n// switch language buttons\r\nbuttons.forEach(b =>\r\n  b.addEventListener("click", function handleButtons() {\r\n    if (this.className === lang) return\r\n\r\n    lang = this.className\r\n    title.textContent = lang === "en" ? _lang_en_js__WEBPACK_IMPORTED_MODULE_0__["default"].TITLE : _lang_zh_tw_js__WEBPACK_IMPORTED_MODULE_1__["default"].TITLE\r\n    streams.innerHTML = ""\r\n    // also need to reset the cursor\r\n    cursor = ""\r\n    loadPage(lang)\r\n  })\r\n)\r\n\r\n// infinite scroll\r\nwindow.addEventListener("scroll", async () => {\r\n  if (\r\n    Math.round(window.innerHeight + window.scrollY) >=\r\n    document.body.offsetHeight\r\n  ) {\r\n    streamsData = await getStreams(lang, token, cursor)\r\n    data = streamsData.data\r\n    cursor = streamsData.cursor\r\n\r\n    setStreams(data.data, token)\r\n  }\r\n})\r\n\n\n//# sourceURL=webpack:///./src/index.js?'
+          )
+        },
+        "./src/lang-en.js": function (
+          module,
+          __webpack_exports__,
+          __webpack_require__
+        ) {
+          "use strict"
+          eval(
+            '__webpack_require__.r(__webpack_exports__);\n// if (!window.I18N) window.I18N = {};\r\n// window.I18N["en"] = {\r\n/* harmony default export */ __webpack_exports__["default"] = ({\r\n  TITLE: "English Streams",\r\n});\r\n\n\n//# sourceURL=webpack:///./src/lang-en.js?'
+          )
+        },
+        "./src/lang-zh-tw.js": function (
+          module,
+          __webpack_exports__,
+          __webpack_require__
+        ) {
+          "use strict"
+          eval(
+            '__webpack_require__.r(__webpack_exports__);\n// if (!window.I18N) window.I18N = {};\r\n// window.I18N["zh"]\r\n// module.exports = {\r\n/* harmony default export */ __webpack_exports__["default"] = ({\r\n  TITLE: "中文實況",\r\n});\r\n\n\n//# sourceURL=webpack:///./src/lang-zh-tw.js?'
+          )
+        },
+      })
+    </script>
   </body>
 </html>
